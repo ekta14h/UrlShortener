@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ekta.co | {% block title %}Shorten that url{% endblock title %}</title>
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="http://getbootstrap.com/examples/cover/cover.css">
+    <style>
+    body {
+      background-color: #226268;
+      background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/05/20100726_Kalamitsi_Beach_Ionian_Sea_Lefkada_island_Greece.jpg');
+      background-size: cover;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <div class="site-wrapper-inner">
+        <div class="cover-container">
+          <div class="inner-container">
+            {% block content %}
+            {% endblock content %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
